@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 import { PageHeader, ListGroup, ListGroupItem } from "react-bootstrap";
 import "./Home.css";
+import Carousel from "./Carousel";
 
 export default class Home extends Component {
   constructor(props) {
@@ -61,9 +62,9 @@ export default class Home extends Component {
 
   renderLander() {
     return (
-      <div className="lander">
-        <h1>Scratch</h1>
-        <p>A simple note taking app</p>
+      <div className="lander">      
+        <h1>Beginning of something big.</h1>
+        <p>A simple app</p>
         <div>
           <Link to="/login" className="btn btn-info btn-lg">
             Login
@@ -72,6 +73,7 @@ export default class Home extends Component {
             Signup
           </Link>
         </div>
+        <Carousel />
       </div>
     );
   }
